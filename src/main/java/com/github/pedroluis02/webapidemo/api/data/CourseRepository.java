@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface CourseRepository {
     List<Course> getALl();
+    void insert(Course entity) throws Exception;
 }
