@@ -1,0 +1,15 @@
+{{> intro_template }}
+    <h3>Available Courses</h3>
+    <ul>
+    {{#courses}}
+        <li>
+            <h4>{{name}}</h4>
+            <ul>
+            {{#topics}}
+                <li>{{.}}</li>
+            {{/topics}}
+            </ul>
+        </li>
+    {{/courses}}
+    </ul>
+{{> footer_template }}
